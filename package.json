@@ -1,0 +1,36 @@
+{
+  "name": "dropbox-api",
+  "version": "1.0.0",
+  "description": "api do sistema de upload de arquivos",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.8",
+    "multer": "^1.4.1",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.4",
+    "nodemon": "^1.19.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "dev": "nodemon src/index.js --exec babel-node",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bc05/dropbox.git"
+  },
+  "author": "Odilon Garcez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bc05/dropbox/issues"
+  },
+  "homepage": "https://github.com/bc05/dropbox#readme"
+}
